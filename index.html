@@ -13,20 +13,43 @@
     <link rel="shortcut icon" href="">
     <link rel="apple-touch-icon" href="">
 
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" /> 
+    <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" /> 	
 	<link rel="stylesheet" href="autopsy.css" type="text/css" media="all" /> 
     
+    <script  type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.ui/1.8.5/jquery-ui.js"></script>
+    <script  type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>    
+    <script  type="text/javascript" src="jquery.isotope.min.js"></script>
+    <script  type="text/javascript" src="jquery.pinnedfooter.js"></script>
+    <script  type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
-    <div id="topbar"></div>
-    <div id="wrapper">
-        <h1 class="page-title">Digital App Autopsy</h1>
-        <div class="page-description">
-            The complex construction of web applications leaves a lot of externalities ripe for producing conflicted value propositions. In particular, we highlight a number of recent cases as evidence for our interest in the specific values of Openness and Dependency, as well as our general interest in other political values and locality.
+    <div class="wrapper" id="content">
+        <h1 class="page-title"><span class="hand">App Autopsy</span>: <input id="appaddress" placeholder="http://boingboing.net" type="text"/>
+            <ul id="sort">
+                <span class="currentval">Valuing Name</span>
+              <li><a href="#title">Valuing Name</a></li>
+              <li><a href="#link">Valuing Link</a></li>
+            </ul>
+        </h1>
+
+        <div id="overview">
+            
+            <div class="geocode"></div>
         </div>
+        
+        <div id="autopsy">            
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+    
+    <div class="wrapper" id="additional">
+        Running with <a href="">default</a> rule file and <a href="">default</a> value file.
     </div>
     <div id="footer">
-        Caplan/Hockenberry
+        Appautopsy by Caplan/Hockenberry. <a href="">Run an autopsy on this site</a>.
     </div>
 </body>
 </html>

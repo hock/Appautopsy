@@ -1,40 +1,286 @@
 html {
-    font-family:helvetica, arial, sans-serif;
-    background:#333;
-    background:-webkit-linear-gradient(top, #333, #000);
-    background:-moz-linear-gradient(top, #333, #000);
-    height:100%;
+    font-family:Helvetica, arial;
+}
+.hand {
+    color:#84dfed;
+    font-family:"Rock Salt";
 }
 body {
-    height: 100%;
     margin: 0 auto;
-    background-repeat: no-repeat;
+    background:url(bg.jpeg);
+    color:#eee;
+}
+.clear {
+    clear:both;
+}
+.wrapper {
+    margin:1em auto;
     width:1000px;
 }
-#topbar {
-    position:absolute;
-    top:0; left:0;
-    height:2em; width:100%;
-    background:#000;
-    -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-}
-#wrapper {
-    padding:3em 0 0 0;
+#content {
+    background:-webkit-linear-gradient(top, rgba(255,255,255,0.2), rgba(255,255,255,0.0));
+    background:-moz-linear-gradient(top, rgba(255,255,255,0.2), rgba(255,255,255,0.0));
+    padding:1em 2em;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;   
 }
 .page-title {
-    font-size:6em;
-    margin-bottom:0.5em;
-    color:#000;
-    text-shadow: #111 1px 1px 3px;
-	
+    margin:0 -1em 1em -1em;
+    padding:0.5em 1em;
+    background:rgba(0,0,0,0.6);
+    width:1000px;
+    font-size:2em;
+    color:#fff;	
+    position:relative;
+}
+.page-title h1 {
+    margin:0;
 }
 .page-description {
     font-size:2em;
 }
+#appaddress {
+    font-weight:normal;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border:2px solid rgba(155,155,155,0.1);
+    background:none;
+    color:#999;
+    outline:none;   
+}
+#additional {
+    margin:0 auto; 
+    text-align:left;
+    background:rgba(255,255,255,0.1);
+    padding:1em 2em;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+}
 #footer {
-    border-top:1px solid #222;
-    margin:2em 0; padding:1em 0;
-    text-align:right;
+    margin:0 auto !important; 
+    width:1000px !important;
+    left:0; right:0;
+    text-align:left;
+    background:rgba(0,0,0,0.4);
+    padding:1em 2em;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    z-index:0;
+}
+#additional a, #footer a {
+    color:#fff;
+}
+#overview {
+    float:left;
+    margin-top:30px;
+    width:400px;
+    border-right:2px solid rgba(255,255,255,0.4);
+    
+}
+#overview h1 {
+    font-size:3em;
+}
+#overview a {
+    text-decoration:none;
+    color:#fff;
+}
+.over-badge {
+    border:2px solid #ccc;
+    margin-right:6px;
+    width:64px;
+    height:64px;
+    float:left;
+}
+#autopsy {
+    position:relative !important;
+    height:auto !important;
+    overflow:visible !important;
+    float:right;
+    width:400px;
+    margin:0 0 80px 0;
+    padding:20px 0 0 100px;
+}
+
+.cube {
+    display:none;
+    cursor:pointer;
+    position:relative;
+    float:right;
+    margin-left:0;
+    width:320px; 
+    height:35px;
+}
+
+.cube span {
+    display:none;
+}
+.cube .label {
+    position:absolute;
+    left:-160px;
+    top:120px;
+    height:31px;
+    width:116px;
+    padding:2px;
+    display:none;
+}
+.cube .label a {
+    color:#fff;
+}
+.topface, .rightface, .leftface
+{
+position : absolute ;
+
+
+}
+.topface div {	
+-webkit-transform: skew(0deg, -30deg) scale(1, 1.16);
+-moz-transform: skew(0deg, -30deg) scale(1, 1.16);
+
+font-size: 0.862em;
+padding : 10px ;
+width: 196px;
+height: 196px;
+overflow:hidden;
+border:2px solid #ccc;
+
+}
+
+.topface {
+-webkit-transform: rotate(60deg);
+-moz-transform: rotate(60deg);
+left: 60px;	
+padding: 10px;
+top : 0 ;
+}
+
+.rightface div {	
+-webkit-transform: skew(0deg, -30deg) scale(1, 1.16);
+-moz-transform: skew(0deg, -30deg) scale(1, 1.16);
+font-size: 0.862em;
+padding : 10px ;
+width: 200px;
+height: 10px;
+overflow:hidden;
+border-bottom:2px solid rgba(0,0,0,0.3);
+}
+
+.rightface {
+left: 170px;	
+padding: 10px;
+top : 175px ;
+}
+
+.leftface div {	
+-webkit-transform: skew(0deg, 30deg) scale(1, 1.16);
+-moz-transform: skew(0deg, 30deg) scale(1, 1.16);
+font-size: 0.862em;
+padding : 10px ;
+width: 200px;
+height: 10px;
+overflow:hidden;
+border-bottom:2px solid rgba(0,0,0,0.3);
+}
+
+.leftface {
+left: -50px;	
+padding: 10px;
+top : 175px ;
+}
+
+
+.cube:hover .leftface div {
+    opacity:0.4;
+}
+.cube:hover .rightface div {
+    opacity:0.4;
+}
+.cube:hover .label {
+    display:block;
+}
+
+.default .topface div { background-color:#ffffff; }
+.default .leftface div { background-color:#aaaaaa; }
+.default .rightface div { background-color:#999999; }
+
+.green .topface div { background-color:#00ff00; }
+.green .leftface div { background-color:#00ee00; }
+.green .rightface div { background-color:#00cc00; }
+
+.yellow .topface div { background-color:#ffff00 }
+.yellow .leftface div { background:#eeee00 }
+.yellow .rightface div { background:#cccc00 }
+
+.red .topface div { background-color:#ff0000 }
+.red .leftface div { background:#ee0000 }
+.red .rightface div { background:#cc0000 }
+
+
+.geocode {
+    margin-top:40px;
+    width: 400px;
+    height: 200px;
+background:url(http://staticmaps.cloudmade.com/8ee2a50541944fb9bcedded5165f09d9/staticmap?center=50.464498,30.499431&zoom=11&size=500x300&format=png&styleid=999) center center;
+
+}
+
+
+#sort {
+    font-weight:normal;
+    float:right;
+    display:block;
+    width:220px;
+    position:absolute;
+    top:0.5em;
+    right:1em;
+    z-index:2000;
+    text-align:center;
+}
+#sort span {
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border:2px solid rgba(155,155,155,0.1);
+    color:#999;
+    cursor:pointer;
+    display:block;
+    padding:0 0.5em;
+}
+#sort li {
+    display:none;
+    margin:0 auto;
+    width:90%;    
+}
+#sort li a {
+    color:#666;
+    font-size:0.8em;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    text-decoration:none;
+    padding:0 0.5em;
+    display:block;
+    background:rgba(0,0,0,0.8);    
+    margin-top:2px;
+    
+}
+#sort:hover li {
+    display:block;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
 }
