@@ -1,3 +1,10 @@
+<?php
+    if(isset($_GET['s'])) {
+        ?><script  type="text/javascript">var startaddress = "<?php echo $_GET['s']; ?>";</script><?php
+    } else {
+        ?><script  type="text/javascript">var startaddress = "boingboing.net";</script><?php
+    }
+?>
 <!DOCTYPE html>  
 <html lang="en">
 <head>
@@ -27,7 +34,7 @@
 </head>
 <body>
     <div class="wrapper" id="content">
-        <h1 class="page-title"><span class="hand">App Autopsy</span>: <input id="appaddress" placeholder="boingboing.net" type="text"/> <input type="button" id="autopsyaction" value="Go"/>
+        <h1 class="page-title"><div id="logo"></div><span class="hand">App Autopsy</span> <input id="appaddress" placeholder="boingboing.net" type="text"/> <input type="button" id="autopsyaction" value="Go"/>
             <ul id="sort">
                 <span class="currentval">Valuing Name</span>
               <li><a href="#title">Valuing Name</a></li>
@@ -44,10 +51,10 @@
     <div class="clear"></div>
     
     <div class="wrapper" id="additional">
-        Running with <a href="">default</a> rule file and <a href="">default</a> value file.
+        Running with <a>default</a> rule file and <a>default</a> value file.
     </div>
     <div id="footer">
-        Appautopsy by Caplan/Hockenberry. <a href="">Run an autopsy on this site</a>.
+        Appautopsy by Caplan/Hockenberry. <a href="?s=appautopsy.com">Run an autopsy on this site</a> | Code at <a href="https://github.com/hock/Appautopsy">Github</a>.
     </div>
 </body>
 </html>

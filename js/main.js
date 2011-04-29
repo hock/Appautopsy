@@ -5,9 +5,10 @@ $(document).ready(function() {
     $.template( "overviewTemplate", overviewMarkup );
     var components = [];        
     
+    
     $("#autopsyaction").click(function() {
         if($("#appaddress").val() == "") {
-           $("#appaddress").val("boingboing.net"); 
+           $("#appaddress").val(startaddress); 
         }
         $.ajax({
             url: 'http://appautopsy.com/service/index.php?s='+$("#appaddress").val(), 

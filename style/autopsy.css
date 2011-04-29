@@ -17,6 +17,16 @@ body {
     margin:1em auto;
     width:1000px;
 }
+#logo {
+    width:48px;
+    height:43px;
+    float:left;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    background:url("../images/icon.png");
+    margin-right:14px;
+    margin-top:-2px;
+}
 #content {
     background:-webkit-linear-gradient(top, rgba(255,255,255,0.2), rgba(255,255,255,0.0));
     background:-moz-linear-gradient(top, rgba(255,255,255,0.2), rgba(255,255,255,0.0));
@@ -98,7 +108,7 @@ body {
     height:auto !important;
     overflow:visible !important;
     float:right;
-    width:400px;
+    width:300px;
     margin:0 0 80px 0;
     padding:20px 0 0 100px;
 }
@@ -117,12 +127,13 @@ body {
     display:none;
 }
 .cube .label {
+    border-top:2px dotted #fff;
+    overflow:hidden;
     position:absolute;
-    left:-160px;
-    top:120px;
-    height:31px;
-    width:116px;
-    padding:2px;
+    left:-260px;
+    top:100px;
+    width:216px;
+    padding:2px 25px 2px 2px;
     display:none;
     color:#aaa;
 }
@@ -144,8 +155,8 @@ position : absolute ;
 
 font-size: 0.862em;
 padding : 10px ;
-width: 196px;
-height: 196px;
+width: 146px;
+height: 146px;
 overflow:hidden;
 border:2px solid #ccc;
 
@@ -164,16 +175,16 @@ top : 0 ;
 -moz-transform: skew(0deg, -30deg) scale(1, 1.16);
 font-size: 0.862em;
 padding : 10px ;
-width: 200px;
+width: 150px;
 height: 10px;
 overflow:hidden;
 border-bottom:2px solid rgba(0,0,0,0.3);
 }
 
 .rightface {
-left: 170px;	
+left: 145px;	
 padding: 10px;
-top : 175px ;
+top : 137px ;
 }
 
 .leftface div {	
@@ -181,16 +192,16 @@ top : 175px ;
 -moz-transform: skew(0deg, 30deg) scale(1, 1.16);
 font-size: 0.862em;
 padding : 10px ;
-width: 200px;
+width: 150px;
 height: 10px;
 overflow:hidden;
 border-bottom:2px solid rgba(0,0,0,0.3);
 }
 
 .leftface {
-left: -50px;	
+left: -25px;	
 padding: 10px;
-top : 175px ;
+top : 137px ;
 }
 
 
