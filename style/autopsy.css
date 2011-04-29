@@ -18,12 +18,13 @@ body {
     width:1000px;
 }
 #logo {
-    width:48px;
-    height:43px;
+    width:44px;
+    height:38px;
     float:left;
+    border:2px solid #000;
     -webkit-border-radius:8px;
     -moz-border-radius:8px;
-    background:url("../images/icon.png");
+    background:url("../images/icon.png") center center;
     margin-right:14px;
     margin-top:-2px;
 }
