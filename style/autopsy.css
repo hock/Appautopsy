@@ -7,7 +7,7 @@ html {
 }
 body {
     margin: 0 auto;
-    background:url(bg.jpeg);
+    background:url("../images/bg.jpg");
     color:#eee;
 }
 .clear {
@@ -29,6 +29,7 @@ body {
     padding:0.5em 1em;
     background:rgba(0,0,0,0.6);
     width:1000px;
+    z-index:20000;
     font-size:2em;
     color:#fff;	
     position:relative;
@@ -47,6 +48,7 @@ body {
     background:none;
     color:#999;
     outline:none;   
+    font-size:0.8em;
 }
 #additional {
     margin:0 auto; 
@@ -74,7 +76,7 @@ body {
     float:left;
     margin-top:30px;
     width:400px;
-    border-right:2px solid rgba(255,255,255,0.4);
+    border-right:2px solid rgba(0,0,0,0.4);
     
 }
 #overview h1 {
@@ -122,6 +124,10 @@ body {
     width:116px;
     padding:2px;
     display:none;
+    color:#aaa;
+}
+.cube .label em {
+    color:#eee;
 }
 .cube .label a {
     color:#fff;
@@ -215,22 +221,26 @@ top : 175px ;
 .red .rightface div { background:#cc0000 }
 
 
-.geocode {
+#geocode {
+    padding:0.25em;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
     margin-top:40px;
-    width: 400px;
+    width: 380px;
     height: 200px;
-background:url(http://staticmaps.cloudmade.com/8ee2a50541944fb9bcedded5165f09d9/staticmap?center=50.464498,30.499431&zoom=11&size=500x300&format=png&styleid=999) center center;
+    background:#000 center center;
 
 }
 
 
 #sort {
     font-weight:normal;
+    font-size:0.8em;
     float:right;
     display:block;
     width:220px;
     position:absolute;
-    top:0.5em;
+    top:0.9em;
     right:1em;
     z-index:2000;
     text-align:center;
@@ -265,6 +275,9 @@ background:url(http://staticmaps.cloudmade.com/8ee2a50541944fb9bcedded5165f09d9/
     display:block;
 }
 
+#originaldoc {
+    display:none !important;
+}
 .isotope,
 .isotope .isotope-item {
   /* change duration value to whatever you like */
