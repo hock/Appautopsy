@@ -23,7 +23,7 @@ function loadcontent(data) {
               ID:data.Domain,
               Color:"default",
               Index:10000,
-              BGImage:data.target+"/favicon.ico",
+              BGImage:"icongrabber.php?s="+data.target,
               Title:data.title,
               Link:data.target,
               Description:"..."

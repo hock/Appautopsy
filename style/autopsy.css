@@ -205,7 +205,7 @@ top : 175px ;
 }
 
 .default .topface div { background-color:#ffffff; }
-.default .leftface div { background-color:#aaaaaa; }
+.default .leftface div { background-color: #aaaaaa; }
 .default .rightface div { background-color:#999999; }
 
 .green .topface div { background-color:#00ff00; }
