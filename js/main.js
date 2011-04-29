@@ -28,7 +28,7 @@ $(document).ready(function() {
                 }
                 data.title = data.plugins["Title"].details;
                 loadcontent(data);
-                $.getJSON("http://appautopsy/geoloc.php?s="+data.plugins["IP"].details, function(loc) {
+                $.getJSON("geoloc.php?s="+data.plugins["IP"].details, function(loc) {
                     console.log(loc);
                     
                     console.log(loc["latitude"]);
