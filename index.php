@@ -36,10 +36,12 @@
     <div class="wrapper" id="content">
         <h1 class="page-title"><div id="logo"></div><span class="hand">App Autopsy</span> <input id="appaddress" placeholder="boingboing.net" type="text"/> <input type="button" id="autopsyaction" value="Go"/>
             <ul id="sort">
-                <span class="currentval">Valuing Name</span>
-              <li><a href="#title">Valuing Name</a></li>
-              <li><a href="#link">Valuing Link</a></li>
-              <li><a href="#random">Random</a></li>
+                <span class="currentval">Sort by Value</span>
+              <li><a href="#privacy">Privacy</a></li>
+              <li><a href="#property">Property</a></li>
+              <li><a href="#accessibility">Accessibility</a></li>
+              <li><a href="#webstandards">Web Standards</a></li>
+              <li><a href="#commerce">Practices</a></li>
               
             </ul>
         </h1>

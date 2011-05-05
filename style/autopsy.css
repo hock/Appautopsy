@@ -114,6 +114,12 @@ body {
     padding:20px 0 0 100px;
 }
 
+.image-icon {
+    width:16px;
+    height:16px;
+    float:right;
+    margin:0 0 4px 4px;
+}
 .cube {
     display:none;
     cursor:pointer;
@@ -136,13 +142,17 @@ body {
     width:216px;
     padding:2px 25px 2px 2px;
     display:none;
-    color:#aaa;
+    color:#eee;
 }
 .cube .label em {
-    color:#eee;
+    color:#aaa;
 }
 .cube .label a {
     color:#fff;
+}
+.cube .label .values {
+    font-size:0.8em;
+    color:#aaa;
 }
 .topface, .rightface, .leftface
 {
@@ -185,7 +195,7 @@ border-bottom:2px solid rgba(0,0,0,0.3);
 .rightface {
 left: 145px;	
 padding: 10px;
-top : 137px ;
+top : 136px ;
 }
 
 .leftface div {	
@@ -202,7 +212,7 @@ border-bottom:2px solid rgba(0,0,0,0.3);
 .leftface {
 left: -25px;	
 padding: 10px;
-top : 137px ;
+top : 136px ;
 }
 
 
@@ -212,25 +222,23 @@ top : 137px ;
 .cube:hover .rightface div {
     opacity:0.4;
 }
-.cube:hover .label {
-    display:block;
-}
+
 
 .default .topface div { background-color:#ffffff; }
 .default .leftface div { background-color: #aaaaaa; }
 .default .rightface div { background-color:#999999; }
 
-.green .topface div { background-color:#00ff00; }
-.green .leftface div { background-color:#00ee00; }
-.green .rightface div { background-color:#00cc00; }
+.green .topface div { background-color:#ffffff; }
+.green .leftface div { background-color:#ffffff; }
+.green .rightface div { background-color:#eeeeee; }
 
 .yellow .topface div { background-color:#ffff00 }
 .yellow .leftface div { background:#eeee00 }
 .yellow .rightface div { background:#cccc00 }
 
-.red .topface div { background-color:#ff0000 }
-.red .leftface div { background:#ee0000 }
-.red .rightface div { background:#cc0000 }
+.red .topface div { background-color:#800080;  border:2px solid #600060; }
+.red .leftface div { background:#800080 }
+.red .rightface div { background:#700070 }
 
 
 #geocode {
