@@ -30,7 +30,7 @@
             "link":"http://www.apache.org/foundation/faq.html"
          }
       }
-   },
+   }, 
    "Country":{
       "description":"The identification of the real-world geographic location of an Internet-connected computer, mobile device, website visitor or other. This is performed through the use of a WHOIS service, a database which stores the registered users and assignees of an Internet resource. IP address geolocation data can include information such as country, region, city, postal/zip code, latitude, longitude and timezone.GeoIP database is from software77, a free Web Service maintained by Webnet77.",
       "link":"http://software77.net/geo-ip/",
