@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var v = "";
+    var v = ""; 
     var cubeMarkup = '<div id="${ID}" class="cube ${Color}" style="z-index:${Index};"> <span class="title">${Title}</span><span class="link">${Link}</span><span class="privacy">${Privacy}</span><span class="property">${Property}</span><span class="accessibility">${Accessibility}</span><span class="webstandards">${Webstandards}</span><span class="commerce">${Commerce}</span> <div class="topface"><div style="background-image:url(${BGImage});"></div></div> <div class="leftface"><div></div></div> <div class="rightface"><div></div></div>    <div class="label"><div class="image-icon" style="background-image:url(${Icon});"></div><strong><a href="${Link}">${Title}</a></br>${Description} <br/><em>${Details}</em> <br/><div class="values">${Positive}<br/>${Negative}</div></div> </div>';
     var overviewMarkup = '<img class="over-badge" src="${BGImage}"/><h1><a href="${Link}">${Title}</a></h1><p>${Description}</p><div id="geocode"></div>';
     $.template( "cubeTemplate", cubeMarkup );
