@@ -3,4 +3,4 @@ $ch = curl_init("http://api.ipinfodb.com/v3/ip-city/?key=34ca1c9c268b4042ecccf2f
 $x = curl_exec($ch); 
 curl_close($ch);
 
-?>
+?> 
