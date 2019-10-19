@@ -4,7 +4,7 @@
     } else {
         ?><script  type="text/javascript">var startaddress = "boingboing.net";</script><?php
     }
-?>
+?> 
 <!DOCTYPE html>  
 <html lang="en">
 <head>
